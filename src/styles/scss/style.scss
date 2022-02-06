@@ -1,0 +1,253 @@
+$colour-black: #1a1c2c;
+$colour-purple: #5d275d;
+$colour-red: #b13e53;
+$colour-orange: #ef7d57;
+$colour-yellow: #ffcd75;
+$colour-lime: #a7f070;
+$colour-green: #38b764;
+$colour-jade: #257179;
+$colour-navy: #29366f;
+$colour-blue: #3b5dc9;
+$colour-light-blue: #41a6f6;
+$colour-teal: #73eff7;
+$colour-white: #f4f4f4;
+$colour-light-gray: #94b0c2;
+$colour-gray: #566c86;
+$colour-dark-gray: #333c57;
+
+$measurement-max-width: 1200px;
+
+:export {
+  black: $colour-black;
+  purple: $colour-purple;
+  red: $colour-red;
+  orange: $colour-orange;
+  yellow: $colour-yellow;
+  lime: $colour-lime;
+  green: $colour-green;
+  jade: $colour-jade;
+  navy: $colour-navy;
+  blue: $colour-blue;
+  lightBlue: $colour-light-blue;
+  teal: $colour-teal;
+  white: $colour-white;
+  lightGray: $colour-light-gray;
+  gray: $colour-gray;
+  darkGray: $colour-dark-gray;
+}
+
+@font-face {
+  font-family: 'Sky-Bold';
+  src: local('Sky-Bold'), url(../../assets/fonts/sky_bold-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Sky-Med';
+  src: local('Sky-Med'), url(../../assets/fonts/sky_med-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Sky-Reg';
+  src: local('Sky-Reg'), url(../../assets/fonts/sky_reg-webfont.woff) format('woff');
+}
+
+body {
+  background-color: $colour-black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sky-Bold', sans-serif;
+}
+
+.white-text {
+  color: $colour-white;
+}
+
+.navbar {
+  background-color: $colour-black;
+}
+
+.nav-link {
+  font-family: 'Sky-Med', sans-serif;
+  color: $colour-gray;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  color: $colour-white;
+  font-weight: 600;
+}
+
+.white-background {
+  background-color: $colour-white;
+}
+
+.data-card {
+  border-radius: 15px;
+}
+
+.chart-tooltip {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.time-series-chart-gradient {
+  position: absolute;
+  border-radius: 10px;
+  padding: 10px;
+  width: 80px;
+  color: $colour-dark-gray;
+  background-color: $colour-white;
+}
+
+.max-width-wrapper {
+  max-width: $measurement-max-width
+}
+
+.metrics .title {
+  color: $colour-dark-gray;
+  font-family: 'Sky-Bold', sans-serif;
+}
+
+.metrics .data .date {
+  color: $colour-gray;
+  font-family: 'Sky-Med', sans-serif;
+}
+
+.metrics .data .positive {
+  font-family: 'Sky-Reg', sans-serif;
+  color: $colour-green;
+}
+
+.metrics .data .negative {
+  font-family: 'Sky-Reg', sans-serif;
+  color: $colour-orange;
+}
+
+.time-series-tool-tip {
+  position: absolute;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.time-series-tool-tip .header {
+  font-family: 'Sky-Med', sans-serif;
+}
+
+.time-series-tool-tip .data {
+  font-family: 'Sky-Reg', sans-serif;
+  font-style: italic;
+}
+
+.dropdown-menu {
+  background-color: $colour-white;
+  color: $colour-dark-gray;
+}
+
+.dropdown-toggle {
+  font-family: 'Sky-Bold', sans-serif;
+  color: $colour-white;
+  background-color: $colour-gray;
+  border-color: $colour-gray;
+  transition: all 500ms ease;
+}
+
+.dropdown-toggle:hover {
+  background-color: $colour-lime;
+  border-color: $colour-lime;
+}
+
+.view-figures-label {
+  color: $colour-white
+}
+
+.channel-legend .indicator {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  margin-right:10px
+}
+
+.channel-legend .name {
+  font-family: 'Sky-Med', sans-serif;
+  color: $colour-white;
+  margin-right:30px
+}
+
+.channel-views-tooltip{
+  width:200px;
+  background-color:white;
+  border-radius:15px;
+  font-size: 20px;
+  color:$colour-dark-gray;
+  font-family:'Sky-Med',sans-serif;
+}
+
+.clear-button{
+  height:30px;
+  width:30px;
+  background-color: $colour-gray;
+  color: $colour-white;
+  font-family:'Sky-Bold',sans-serif;
+  font-size:20px;
+  border-radius:10px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  cursor:pointer;
+  transition: all 250ms ease;
+}
+
+.clear-button:hover{
+  background-color:$colour-red;
+  transform:scale(1.35)
+}
+
+.movie-details .image{
+  border-radius:25px;
+  transition:all 1s ease;
+}
+
+.movie-details .image:hover{
+  transform:scale(1.025)
+}
+
+.movie-details .title{
+  color:$colour-white;
+  font-family:'Sky-Bold',sans-serif;
+}
+
+.movie-details .description{
+  color:$colour-white;
+  font-family:'Sky-Med',sans-serif;
+}
+
+.movie-details .tags{
+  color:$colour-white;
+  font-family:'Sky-Reg',sans-serif;
+}
+
+.drop-shadow{
+  -moz-box-shadow:    3px 3px 0 3px $colour-green;
+  -webkit-box-shadow: 3px 3px 0 3px $colour-green;
+  box-shadow:         3px 3px 0 3px $colour-green;
+}
+
+.drop-shadow-lg{
+  -moz-box-shadow:    0 10px 0 0 $colour-green;
+  -webkit-box-shadow: 0 10px 0 0 $colour-green;
+  box-shadow:         0 10px 0 0 $colour-green;
+}
+
+.drop-shadow-lg-positive{
+  -moz-box-shadow:    0 10px 0 0 $colour-lime;
+  -webkit-box-shadow: 0 10px 0 0 $colour-lime;
+  box-shadow:         0 10px 0 0 $colour-lime;
+}
+
+.drop-shadow-lg-negative{
+  -moz-box-shadow:    0 10px 0 0 $colour-orange;
+  -webkit-box-shadow: 0 10px 0 0 $colour-orange;
+  box-shadow:         0 10px 0 0 $colour-orange;
+}
+
